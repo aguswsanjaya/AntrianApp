@@ -1,14 +1,52 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Antrian App
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <ion-row>
+    <ion-col col-2></ion-col>
+    <ion-col col-8>
+      <button ion-button full (click)="goToHospitalList(false)">Pendaftaran</button>
+    </ion-col>
+    <ion-col col-2></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-2></ion-col>
+    <ion-col col-8>
+      <button ion-button full (click)="login()">No. Antrian</button>
+    </ion-col>
+    <ion-col col-2></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-2></ion-col>
+    <ion-col col-8>
+      <button ion-button full (click)="login()">e-Konsul</button>
+    </ion-col>
+    <ion-col col-2></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-2></ion-col>
+    <ion-col col-8>
+      <button ion-button full (click)="login()">Pengaduan</button>
+    </ion-col>
+    <ion-col col-2></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-2></ion-col>
+    <ion-col col-8>
+      <button ion-button full (click)="login()">Cek Sehat</button>
+    </ion-col>
+    <ion-col col-2></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-2></ion-col>
+    <ion-col col-8>
+      <button ion-button full (click)="goToHospitalList(true)">Lokasi</button>
+    </ion-col>
+    <ion-col col-2></ion-col>
+  </ion-row>
 </ion-content>

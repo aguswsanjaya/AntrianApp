@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Pilih Unit Kerja</ion-title>
+  </ion-navbar>
+  <ion-item>
+    <ion-input type="text" value="" placeholder="Cari Puskesmas/Rumah Sakit" [(ngModel)]="searchQuery"></ion-input>
+  </ion-item>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let hospital of filteredHospital()" (click)="hospitalSelected(hospital)">
+      {{ hospital.name }}
+    </button>  
+  </ion-list>
+</ion-content>
