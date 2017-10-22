@@ -13,7 +13,12 @@ import * as provider from '../provider/provider'
     MyApp,
     page.HomePage,
     page.LoginPage,
-    page.HospitalListPage
+    page.HospitalListPage,
+    page.PatientRegistrationPage,
+    page.PatientTypePage,
+    page.VisitTimePage,
+    page.PolyclinicListPage,
+    page.QueueNoPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,12 @@ import * as provider from '../provider/provider'
     MyApp,
     page.HomePage,
     page.LoginPage,
-    page.HospitalListPage
+    page.HospitalListPage,
+    page.PatientRegistrationPage,
+    page.PatientTypePage,
+    page.VisitTimePage,
+    page.PolyclinicListPage,
+    page.QueueNoPage
   ],
   providers: [
     provider.AuthService,

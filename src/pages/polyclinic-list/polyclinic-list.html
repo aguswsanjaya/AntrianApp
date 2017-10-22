@@ -1,0 +1,18 @@
+<ion-header>
+  
+    <ion-navbar>
+      <ion-title>Pilih BP/Poli</ion-title>
+    </ion-navbar>
+    <ion-item>
+      <ion-input type="text" value="" placeholder="Cari BP/Poli" [(ngModel)]="searchQuery"></ion-input>
+    </ion-item>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+      <button ion-item *ngFor="let poli of filteredPoli()" (click)="goToQueueNo()">
+        {{ poli.name }}
+      </button>  
+    </ion-list>
+  </ion-content>
+  

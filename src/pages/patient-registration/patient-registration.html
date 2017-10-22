@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Form Data Pasien
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col col-1></ion-col>
+    <ion-col col-10>
+      <ion-list>
+
+        <ion-item>
+          <ion-label floating>NIK</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+
+        <ion-item *ngIf="isNewPatient">
+          <ion-label floating>Nama</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item *ngIf="isNewPatient">
+          <ion-label floating>Jenis Kelamin</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item *ngIf="isNewPatient">
+          <ion-label floating>Tanggal Lahir</ion-label>
+          <ion-input type="date"></ion-input>
+        </ion-item>
+
+        <ion-item *ngIf="isNewPatient">
+          <ion-label floating>Alamat</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item *ngIf="isNewPatient">
+          <ion-label floating>Provinsi</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item *ngIf="isNewPatient">
+          <ion-label floating>Kabupaten</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item *ngIf="isNewPatient">
+          <ion-label floating>Kecamatan</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item *ngIf="isNewPatient">
+          <ion-label floating>Kelurahan</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+      </ion-list>
+      <button ion-button full (click)="validate()">Lanjutkan</button>
+    </ion-col>
+    <ion-col col-1></ion-col>
+  </ion-row>
+
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Jadwal Kunjungan
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col col-1></ion-col>
+    <ion-col col-10>
+      <ion-list>
+
+        <ion-item>
+          <ion-label floating>Nama</ion-label>
+          <ion-input type="text" value="Admin" disabled></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Jadwal Kunjungan</ion-label>
+          <ion-input type="date"></ion-input>
+        </ion-item>
+
+      </ion-list>
+      <button ion-button full (click)="goToPolyclinicList()">Lanjutkan</button>
+    </ion-col>
+    <ion-col col-1></ion-col>
+  </ion-row>
+
+</ion-content>
