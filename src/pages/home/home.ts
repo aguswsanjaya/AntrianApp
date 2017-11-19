@@ -10,9 +10,9 @@ import * as page from "../../pages/pages";
 export class HomePage {
 
   constructor(public navCtrl: NavController, private authService: provider.AuthService) {
-    if (!this.authService.isLoggedIn()){
-      this.navCtrl.push(page.LoginPage);
-    }
+    // if (!this.authService.isLoggedIn()){
+    //   this.navCtrl.push(page.LoginPage);
+    // }
   }
 
   login(){}
